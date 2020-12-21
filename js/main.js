@@ -4,7 +4,7 @@ const ctx = document.getElementById("eventsNumber").getContext("2d");
 const chart = new Chart(ctx, {
   type: "horizontalBar",
   data: {
-    labels: ["Accidentes", "Incidente grave", "Incidente", "Intervención"],
+    labels: ["Accidentes", "Incidente\ngrave", "Incidente", "Intervención"],
     datasets: [{
       label: "Cantidad de Sucesos (2020)",
       data: [ 30, 15, 13, 23, 35],
@@ -18,11 +18,6 @@ const chart = new Chart(ctx, {
         "rgb(1, 94, 184)",
         "rgb(1, 94, 184)",
         "rgb(1, 94, 184)",
-        "rgb(1, 94, 184)",
-        "rgb(1, 94, 184)",
-        "rgb(1, 94, 184)",
-        "rgb(1, 94, 184)",
-        "rgb(1, 94, 184)",
         "rgb(1, 94, 184)"
       ],
       borderWidth: 3,
@@ -30,15 +25,19 @@ const chart = new Chart(ctx, {
     }] 
   },
   options: {
+    legend: {
+      display: false
+    },
     scales: {
       yAxes: [{
         barPercentage: 0.5,
         ticks: {
+          fontSize: 15,
           beginAtZero: true
         },
         gridLines: {
           color: "rgba(0, 0, 0, 0)",
-      }   
+      }
       }]
     }
   }
@@ -124,12 +123,20 @@ var lineChart = new Chart(operations, {
   type: 'line',
   data: speedData,
   options: {
+    legend: {
+      display: false
+    },
     scales: {
       yAxes: [{
+        scaleLabel: {
+          display: true,
+          labelString: "Cantidad"
+        },
         barPercentage: 0.5,
         ticks: {
+          fontSize: 18,
           beginAtZero: true
-        }/*,
+        },/*,
         gridLines: {
           color: "rgba(0, 0, 0, 0)",
         }*/
@@ -137,28 +144,15 @@ var lineChart = new Chart(operations, {
       xAxes: [{
         gridLines: {
             color: "rgba(0, 0, 0, 0)",
+        },
+        ticks: {
+          fontSize: 15,
         }   
     }]
     }
   }
 });
- 
 
-
-/*
-
-{
-  legend: {
-    display: true,
-    position: 'top',
-    labels: {
-      boxWidth: 80,
-      fontColor: 'black'
-    }
-  }
-};
-
-*/
 
 
 
@@ -169,7 +163,11 @@ var summary = document.getElementById("summary");
 Chart.defaults.global.defaultFontFamily = "Lato";
 Chart.defaults.global.defaultFontSize = 18;
 */
-var summaryData = {
+
+
+var pieChart = new Chart(summary, {
+  type: 'doughnut',
+  data: {
     labels: [
         "Operaciones especializadas",
         "Operaciones estatales",
@@ -187,25 +185,27 @@ var summaryData = {
               "rgb(196, 78, 103)",
               "rgb(251, 177, 52)",
               "rgb(106, 147, 181)",
-                "rgb(103, 97, 116)"
+              "rgb(103, 97, 116)"
 
             ],
             borderColor: [
-              "#ffffff",
-              "#ffffff",
-              "#ffffff",
-              "#ffffff",
-              "#ffffff",
-              "#ffffff"
+              "rgb(97, 123, 114)",
+              "rgb(151, 109, 127)",
+              "rgb(196, 78, 103)",
+              "rgb(251, 177, 52)",
+              "rgb(106, 147, 181)",
+              "rgb(103, 97, 116)"
 
             ],
             borderWidth: 3
         }]
-};
-
-var pieChart = new Chart(summary, {
-  type: 'doughnut',
-  data: summaryData
+      },
+      options: {
+        legend: {
+          display: false
+        },
+        cutoutPercentage: 60
+      }
 });
    
 /*----------------------------SUCESOS POR FASE DE VUELO--------------------------------------*/
@@ -248,17 +248,23 @@ const chart3 = new Chart(faseDeVuelo, {
     }] 
   },
   options: {
+    legend: {
+      display: false
+    },
     scales: {
       yAxes: [{
         barPercentage: 0.5,
-        ticks: {
           beginAtZero: true
-        }/*,
+        
+        /*,
         gridLines: {
           color: "rgba(0, 0, 0, 0)",
         }*/
       }],
       xAxes: [{
+        ticks: {
+          fontSize: 15,
+        },
         gridLines: {
             color: "rgba(0, 0, 0, 0)",
         }   
@@ -337,15 +343,24 @@ var category = {
 };
 
 var chartOptions = {
+  legend: {
+    display: false
+  },
   scales: {
     xAxes: [{
       barPercentage: 0.8,
+      ticks: {
+        fontSize: 15
+      },
       categoryPercentage: 0.6,
       gridLines: {
         color: "rgba(0, 0, 0, 0)",
       }
     }],
     yAxes: [{
+      ticks: {
+        fontSize: 15,
+      }   
       /*
       gridLines: {
         /*color: "rgba(0, 0, 0, 0)",
@@ -392,15 +407,24 @@ var categoryA = {
 };
 
 var chartOptions = {
+  legend: {
+    display: false
+  },
   scales: {
     xAxes: [{
       barPercentage: 0.8,
       categoryPercentage: 0.6,
       gridLines: {
         color: "rgba(0, 0, 0, 0)",
+      },
+      ticks: {
+        fontSize: 15
       }
     }],
     yAxes: [{
+      ticks: {
+        fontSize: 15,
+      }   
       /*
       gridLines: {
         /*color: "rgba(0, 0, 0, 0)",

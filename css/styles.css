@@ -41,29 +41,43 @@ body {
     justify-content: space-around;
 }
 
-.graficos1{
+.graficos{
+    margin-top: 30px;
     display: flex;
     justify-content: center;
-}
-.accidents-wrapper {
-    width: 550px;
-    height: 350px;
-    margin: 15px;
+    text-align: center;
 }
 
+.accidents-wrapper {
+    width: 600px;
+    height: 350px;
+    padding: 20px 50px 0 20px;
+}
+
+.doughnut-wrapper{
+    width: 1000px;
+    height: 650px;
+    margin: 0 10px;
+}
+.flight-phase-wrapper {
+    width: 850px;
+    height: 450px;
+    text-align: center;
+}
+.harmonized-category-wrapper {
+    width: 1050px;
+    height: 350px;
+    text-align: center;
+}
+
+.accident-category {
+    width: 1050px;
+    height: 350px;
+    margin-top: 200px;
+    text-align: center;
+
+}
 .summary-wrapper {
     margin: auto;
 }
-.fase-de-vuelo {
-    /*
-    width: 90%;
-    height: 250px;
-    margin: 0 auto;
-    */
-}
-.categoria-armonizada{
-    /*
-    width: 90%;
-    height: 250px;
-    */
-}
+

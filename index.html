@@ -21,22 +21,15 @@ http://www.templatemo.com/tm-513-avalon
 
     <div class="center">
         <h1>Estadísticas</h1>
-         <select>
-            <option>------</option>
-            <option>2020</option>
-            <option>2019</option>
-        </select>
-        <p>Buscar por año:</p>
-        <button type="button" class="btn btn-link">Buscar</button>
+       <!-- <button type="button" class="btn btn-link">Buscar</button> -->
     </div>
 
-    <h4 class="resumen">Resumen 2008</h4>
     <div class="cards-wrapper">
         <div class="cards row">
             <div>
-                <h4 class="blue">categorías con más sucesos:</h4>
+                <h4 class="blue">Categorías con más sucesos:</h4>
                 <h7>loren ipsu nosequè</h7>
-                <h4 class="blue">categorías con más fatalidades:</h4>
+                <h4 class="blue">Categorías con más fatalidades:</h4>
                 <h7>bla bla bla blalalalalalalal dd d f  fasd asd asd asd</h7>
             </div>
 
@@ -64,50 +57,68 @@ http://www.templatemo.com/tm-513-avalon
         </div>
     </div>
 
-    <div class="graficos1">
-        <div class="accidents-wrapper panel panel-default">
+    <div class="graficos">
+        <div class="accidents-wrapper">
+            <h3>Cantidad de sucesos (2020)</h3>
             <canvas id="eventsNumber" width="auto" height="auto"></canvas>
         </div>
     
-        <div class="accidents-wrapper panel panel-default">
+        <div class="accidents-wrapper">
+            <h3>Operaciones - Mensual (2020)</h3>
             <canvas id="operations" width="auto" height="auto"></canvas>
         </div> 
     </div>
 
-    <div class="graficos1">
+    <div class="graficos">
+        <!-- class= " panel panel-default"
         <div><p>Del total de sucesos investigados durante los últimos 4 años, la mayor parte corresponde a sucesos de aeronaves que realizaban operaciones comprendidas dentro de la aviación general. Si bien las operaciones de trabajo aéreo, estan bajo la definición de aviación general, a fines estadísticos se contemplan por separado.
         <br>
         <br>
         Nota: los sucesos en los que no se determino la operación que realizaba la aeronave (no denuncia, presunción de ilícito, remoción de restos, etc.) se clasifican como "se desconoce".
         <br>
         Los sucesos en los que intervienen dos aeronaves se contabilizan como dos operaciones aéreas.</p></div>
+        -->
+        <div class="doughnut-wrapper">
+            <h3>Resumen (año - año)</h3>
+            <canvas id="summary" width="auto" height="auto"></canvas>
+        </div>
             
+    </div>
+
+    <div class="graficos">
+        <div class="flight-phase-wrapper">
+            <h3>Sucesos por fase de vuelo</h3>
+            <canvas id="faseDeVuelo" width="auto" height="auto"></canvas>
         </div>
 
-
-        
-    <div class="summary-wrapper">
-        <canvas id="summary" width="auto" height="auto"></canvas>
     </div>
     
-    <div class="fase-de-vuelo">
-        <canvas id="faseDeVuelo" width="auto" height="250px"></canvas>
+    <!--    
+    <div>
+        <h2>Sucesos por Categoria</h2>
+        <h3>El CAST/ICAO Common Taxonomy Team (CICTT), desarrolló un conjunto de definiciones y taxonomias comunes para los sistemas de notificación de incidentes y accidentes de aviación; para la mejora en la capacidad de la comunidad aeronáutica en centrarse en temas comunes de seguridad operacional.
+        <br>
+
+        Categorías armonizadas de sucesos
+        <br>    
+        IATA y OACI, implementaron categorías armonizadas de sucesos, para la integración de datos, entre organizaciones, unificando métodos de análisis y métricas para el futuro, de acuerdo The Global Safety Information Exchange (GSIE)</h3>
     </div>
-    
-    <div class="categoria-armonizada">
-        <canvas id="harmonizedCategory" width="auto" height="auto"></canvas>
+    -->
+
+
+    <div class="graficos">
+        <div class="harmonized-category-wrapper">
+            <h3>Sucesos por categoría armonizada</h3>
+            <canvas id="harmonizedCategory" width="auto" height="auto"></canvas>
+        </div>
     </div>
 
-    accident category
-
-    <div class="categoria-accidentes">
-        <canvas id="accidentCategory" width="auto" height="auto"></canvas>
+    <div class="graficos">
+        <div class="accident-category">
+            <h3>Accidentes por categoría (año - año)</h3>
+            <canvas id="accidentCategory" width="auto" height="auto"></canvas>
+        </div>
     </div>
-
-
-
-
-
     
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
