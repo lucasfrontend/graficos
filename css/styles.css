@@ -26,14 +26,17 @@ body {
     text-align: center;
         
 }
+
 .resumen{
     padding-left: 30px;
 }
+
 .cards-wrapper{
     background-color: #eeeeee;
     padding: 15px;
 
 }
+
 .cards{
     width: 100%;
     height: 200px;
@@ -59,11 +62,13 @@ body {
     height: 650px;
     margin: 0 10px;
 }
+
 .flight-phase-wrapper {
     width: 850px;
     height: 450px;
     text-align: center;
 }
+
 .harmonized-category-wrapper {
     width: 1050px;
     height: 350px;
@@ -75,8 +80,8 @@ body {
     height: 350px;
     margin-top: 200px;
     text-align: center;
-
 }
+
 .summary-wrapper {
     margin: auto;
 }

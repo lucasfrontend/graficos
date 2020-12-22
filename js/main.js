@@ -20,7 +20,9 @@ const chart = new Chart(ctx, {
         "rgb(1, 94, 184)",
         "rgb(1, 94, 184)"
       ],
+      /*
       borderWidth: 3,
+      */
       hoverBorderWidth: 0
     }] 
   },
@@ -183,28 +185,33 @@ var pieChart = new Chart(summary, {
               "rgb(97, 123, 114)",
               "rgb(151, 109, 127)",
               "rgb(196, 78, 103)",
-              "rgb(251, 177, 52)",
+              
+              'rgb(251, 177, 52)',
+
               "rgb(106, 147, 181)",
               "rgb(103, 97, 116)"
-
             ],
+            /*
             borderColor: [
-              "rgb(97, 123, 114)",
-              "rgb(151, 109, 127)",
-              "rgb(196, 78, 103)",
-              "rgb(251, 177, 52)",
-              "rgb(106, 147, 181)",
-              "rgb(103, 97, 116)"
+              "rgb(97, 103, 114)",
+              "rgb(151, 99, 127)",
+              "rgb(196, 58, 103)",
+
+              'rgb(106, 127, 181)',
+              
+              "rgb(106, 127, 181)",
+              "rgb(103, 77, 116)"
 
             ],
-            borderWidth: 3
+            borderWidth: 3, */
+            hoverBorderWidth: 0
         }]
       },
       options: {
         legend: {
           display: false
         },
-        cutoutPercentage: 60
+        cutoutPercentage: 30
       }
 });
    
@@ -243,7 +250,9 @@ const chart3 = new Chart(faseDeVuelo, {
         "rgb(1, 94, 184)",
         "rgb(1, 94, 184)"
       ],
+      /*
       borderWidth: 3,
+      */
       hoverBorderWidth: 0
     }] 
   },
@@ -288,7 +297,9 @@ var line1 = {
   data: [0, 0, 15, 15, 47, 10, 30, 0],
   backgroundColor: 'rgb(106, 147, 181)',
   borderColor: 'rgb(106, 127, 181)',
+  /*
   borderWidth: 2,
+  */
   hoverBorderWidth: 0
 };
 
@@ -297,7 +308,9 @@ var line2 = {
   data: [0, 0, 0, 0, 0, 0, 0, 0],
   backgroundColor: 'rgba(99, 132, 0)',
   borderColor: 'rgba(99, 112, 0)',
+  /*
   borderWidth: 2,
+  */
   hoverBorderWidth: 0
 };
 
@@ -306,7 +319,7 @@ var line3 = {
   data: [0, 0, 5, 0, 0, 0, 7, 0],
   backgroundColor: 'rgb(97, 123, 114)',
   borderColor: 'rgb(97, 103, 114)',
-  borderWidth: 2,
+  /*borderWidth: 2,*/
   hoverBorderWidth: 0
 };
 
@@ -315,7 +328,7 @@ var line4 = {
   data: [20, 35, 70, 35, 125, 0, 80, 0],
   backgroundColor: 'rgb(251, 177, 52)',
   borderColor: 'rgb(251, 157, 52)',
-  borderWidth: 2,
+  /*borderWidth: 2,*/
   hoverBorderWidth: 0
 };
 
@@ -324,7 +337,7 @@ var line5 = {
   data: [0, 0, 0, 0, 25, 0, 25, 0],
   backgroundColor: 'rgb(103, 97, 116)',
   borderColor: 'rgb(103, 77, 116)',
-  borderWidth: 2,
+  /*borderWidth: 2,*/
   hoverBorderWidth: 0
 };
 
@@ -333,7 +346,7 @@ var line6 = {
   data: [0, 3, 0, 0, 3, 0, 0 , 0],
   backgroundColor: 'rgb(196, 78, 103)',
   borderColor: 'rgb(196, 58, 103)',
-  borderWidth: 2,
+  /*borderWidth: 2,*/
   hoverBorderWidth: 0
 };
 
@@ -388,7 +401,7 @@ var accidentes = {
   data: [0, 0, 15, 15, 47, 10, 30, 0, 10, 0, 20, 30, 0, 10, 20 , 30, 20, 10, 0, 10, 0, 0, 20, 30, 40],
   backgroundColor: "rgb(1, 114, 184)",
   borderColor: "rgb(1, 94, 184)",
-  borderWidth: 2,
+  /*borderWidth: 2,*/
   hoverBorderWidth: 0
 };
 
@@ -397,7 +410,7 @@ var accidentesFatales = {
   data: [10, 0, 10, 50, 0, 20, 0, 10, 10, 20, 0, 5, 0, 10, 0, 20, 10, 0, 10, 20, 10, 0, 0, 10, 30],
   backgroundColor: "rgb(45, 44, 43)",
   borderColor: "rgb(45, 24, 43)",
-  borderWidth: 2,
+  /*borderWidth: 2, */
   hoverBorderWidth: 0
 };
 
